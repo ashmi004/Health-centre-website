@@ -11,7 +11,7 @@ export const images = [
     },
     {
       id: 3,
-      src: "/banner-1.jpg",
+      src: "/hc1.png",
       
     },
   

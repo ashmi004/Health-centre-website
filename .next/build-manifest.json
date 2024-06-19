@@ -15,11 +15,6 @@
     "static/chunks/main-app.js"
   ],
   "pages": {
-    "/Contact": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/Contact.js"
-    ],
     "/Gallery": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -34,6 +29,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
+    ],
+    "/buses": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/buses.js"
     ]
   },
   "ampFirstPages": []

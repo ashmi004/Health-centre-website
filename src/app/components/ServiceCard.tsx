@@ -1,11 +1,11 @@
 import React from "react";
 
-const ServiceCard = ({ icon, title }) => {
+const ServiceCard = ({ icon, title, children }) => {
   return (
-    <div className="py-1 px-2 bg-white rounded-lg shadow-md text-start md:max-w-[170px] mx-auto cursor-pointer hover:bg-gray-200">
-      <img src={icon} className="py-5" />
-      <h3 className=" text-center md:text-2xl py-2">{title}</h3>
-      
+    <div className="flex flex-col items-center p-4 bg-white rounded-md shadow-md">
+      <img src={icon} alt={title} className="w-16 h-16 mb-4" />
+      <h3 className="text-lg font-bold">{title}</h3>
+      {children && <div className="mt-2 w-full text-center">{children}</div>}
     </div>
   );
 };

@@ -11,7 +11,7 @@ const Top = () => {
             <img
               src="/logo.jpg"
               alt="provider_img"
-              className="rounded-xl object-cover w-12 h-12 ml-1 mr-3"
+              className="rounded-xl object-cover w-20 h-18 ml-1 mr-3"
             />
           </div>
           {/* Text */}
@@ -19,18 +19,20 @@ const Top = () => {
             <h4 className="capitalize font-bold md:text-3xl mr-8">
               Indian Institute of Technology, Indore
             </h4>
-            <h4 className="capitalize font-bold leading-tight py-2">
+            <h4 className="capitalize font-bold leading-tight py-2 text-1xl">
               भारतीय प्रौद्योगिकी संस्थान इंदौर
             </h4>
+            <div className="bg-blue-900 h-0.5 w-60%"></div>
+           
+          <p className="leading-6 font-bold text-2xl pt-2 pb-2">Health Center-स्वास्थ्य केंद्र</p>
+        
           </div>
         </div>
 
         {/* Health Center */}
-        <div className="absolute top-4 right-6">
-          <p className="leading-6 font-bold text-blue-600 text-2xl">Health Center-स्वास्थ्य केंद्र</p>
-        </div>
+        
       </div>
-      <div className="bg-blue-900 h-1 w-100%"></div>
+     
     </div>
   );
 };

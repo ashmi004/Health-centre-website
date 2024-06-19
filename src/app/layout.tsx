@@ -1,22 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "./components/Header";
-import Banner from "./components/Banner";
-import Navbar from "./components/Navbar";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Hero from "./components/Hero";
-import Text1 from "./components/Text";
-import About from "./components/About";
-import Footer from "./components/Footer";
-import Services from "./components/Services";
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import { NextAuthProvider } from "./Providers";
 
 
-import Gallery from "../../pages/Gallery";
-import AboutUs from "./components/AboutUs";
-import Contact from "../../pages/Contact";
-import Slider from "./components/Slider";
 
 
 
@@ -34,11 +26,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-       
-       
-
-        {children}</body>
+       <body className={inter.className}>
+        <NextAuthProvider>
+          <div>
+            <Header/>
+            {/* <Navbar /> */}
+            {children}
+          </div>
+        </NextAuthProvider>
+      </body>
     </html>
   );
 }

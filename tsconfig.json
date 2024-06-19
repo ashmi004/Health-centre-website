@@ -27,6 +27,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "pages/Gallery.tsx"
-  ],
+, "src/app/components/UserInfo.tsx", "src/app/components/SignInBtn.jsx", "pages/_app.js", "pages/login.tsx", "src/app/components/HealthRecordModal.js"  ],
   "exclude": ["node_modules"]
 }

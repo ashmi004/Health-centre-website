@@ -1,38 +1,31 @@
-import Image from "next/image";
+// pages/index.tsx
+"use client";
+import React from "react";
 import Navbar from "./components/Navbar";
-import Header from "./components/Header";
 import Slider from "./components/Slider";
 import AboutUs from "./components/AboutUs";
 import Services from "./components/Services";
-import Contact from "../../pages/Contact";
 import Doctors from "./components/Doctors";
-import NumberCounter from "./components/counter";
-import Footer from "./components/Footer";
-import SliderEvents from "../../pages/Events";
 import EventsText from "./components/EventsText";
 import Events from "../../pages/Events";
-
+import Accordion from "./components/Accordion";
+import Footer from "./components/Footer";
+import UserInfo from "./components/UserInfo";
 
 export default function Home() {
   return (
-    <main >
+    <main>
+      <Navbar />
+      {/* <UserInfo/> */}
+      <Slider />
+      <AboutUs />
+      <Services />
+      <Doctors />
+      <EventsText />
+      <Events />
+      <Accordion />
      
-      <Header/>
-      <Navbar/>
-      <Slider/>
-      <AboutUs/>
-      <Services/>
-      <Doctors/>
-      <EventsText/>
-      <Events/>
-     
-      <NumberCounter/>
-      <Footer/>
-    
-     
-      
-    
-      
+      <Footer />
     </main>
   );
 }

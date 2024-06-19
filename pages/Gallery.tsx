@@ -14,8 +14,8 @@ const Gallery = () => {
     "/img5.jpeg",
     "/img4.jpeg",
     "/img1.jpeg",
-    "/banner-2.jpg",
-    "/banner-2.jpg",
+    "/ambu.jpeg",
+    "/hc1.png",
     // Add more images as needed
   ];
 
